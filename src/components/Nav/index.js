@@ -3,14 +3,14 @@ import React from "react";
 function Nav() {
   const categories = [
     {
-      name: "commercial",
+      name: "Commercial",
       description:
         "Photos of grocery stores, food trucks, and other commercial projects",
     },
-    { name: "portraits", description: "Portraits of people in my life" },
-    { name: "food", description: "Delicious delicacies" },
+    { name: "Portraits", description: "Portraits of people in my life" },
+    { name: "Food", description: "Delicious delicacies" },
     {
-      name: "landscape",
+      name: "Landscape",
       description: "Fields, farmhouses, waterfalls, and the beauty of nature",
     },
   ];
@@ -37,7 +37,7 @@ function Nav() {
               <span>Contact</span>
             </li>
             {categories.map((category) => (
-              <li className="mx-1" key={category.name} >
+              <li className="mx-2" key={category.name} >
               <span onClick={() => categorySelected(category.name)} >
                   {category.name}
                 </span>
